@@ -9,7 +9,7 @@ app.get('/test', (req, res) => res.send(
     ))
 
     
-if(process.env.NODE_ENV==="production")
+/* if(process.env.NODE_ENV==="production")
 {
     app.use(express.static('client/build'))
     const path=require('path')
@@ -18,6 +18,6 @@ if(process.env.NODE_ENV==="production")
             'client','build','index.html'
         ))
     })
-}
+} */
 
 app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`))
